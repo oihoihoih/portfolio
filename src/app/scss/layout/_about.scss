@@ -1,0 +1,25 @@
+.about {
+    width: 100vw;
+    padding: 0 2vw;
+    &__heading {
+        margin-top: 8vh;
+    }
+    &__text {
+        margin-top: 5rem;
+        padding-right: 5rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+        &-indent {
+            text-indent: 5rem;
+        }
+    }
+}
+
+.rrss {
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    &__item a {
+        color: $darkColor;
+    }
+}
