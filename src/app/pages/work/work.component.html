@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="portfolio__item--title">
-                    <a href="" class="portfolio__link">
+                    <a [routerLink]=" ['/single', work.listName ] " class="portfolio__link">
                         {{ work.listName }}
                         <img class="portfolio__image" [src]="work.mainImg" [alt]="work.name" />
 
