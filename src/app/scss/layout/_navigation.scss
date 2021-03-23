@@ -1,0 +1,36 @@
+.navigation {
+    display: inline-block;
+    position: absolute;
+    top: 3.3rem;
+    right: 3rem;
+    &__list {
+        padding: 2rem;
+        display: inline;
+    }
+    &__item {
+        position: relative;
+        display: inline;
+        margin-left: 5rem;
+        padding-bottom: 1.5rem;
+    }
+    &__link {
+        font-size: 2rem;
+        color: $primaryColor;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 50%;
+        &:before {
+            left: 5px;
+            right: 2px;
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: $primaryColor;
+            bottom: 0;
+            width: 0%;
+            -webkit-transition: .2s width ease-in-out;
+            -o-transition: .2s width ease-in-out;
+            transition: .2s width ease-in-out;
+        }
+    }
+}

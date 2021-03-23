@@ -1,0 +1,47 @@
+.portfolio {
+    width: 100%;
+    &__item {
+        padding-bottom: 5rem;
+        list-style: none;
+        text-transform: uppercase;
+        &:not(:first-child) {
+            border-top: 1px solid $primaryColor;
+        }
+        &--title {
+            width: 50%;
+        }
+    }
+    &__image {
+        display: none;
+        opacity: 0;
+    }
+    &__link {
+        font-size: 12rem;
+        line-height: 1;
+        color: $primaryColor;
+        &:hover {
+            text-decoration: none;
+            color: $secondaryColor;
+        }
+        &:hover .portfolio__image {
+            max-width: 60vw;
+            max-height: 80vh;
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 1;
+        }
+    }
+    &__type {
+        padding: 2rem 0 1rem 0;
+        &--year {
+            font-size: 1.5rem;
+        }
+        &--type {
+            font-size: 1.8rem;
+            letter-spacing: 2px;
+        }
+    }
+}

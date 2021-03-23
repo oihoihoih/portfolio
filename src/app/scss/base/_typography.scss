@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+// TODO: cambiar la tipografía, mirar en tipografías de Atipo foundry
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: $default-font-size;
+    font-weight: 300;
+    color: $darkColor;
+}
+
+// Headings
+.heading-primary {
+    color: $primaryColor;
+    backface-visibility: hidden;
+    &--main {
+        display: block;
+        font-size: 10rem;
+        font-weight: 400;
+        letter-spacing: -.3rem;
+    }
+    &--subtl {
+        display: block;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    color: $primaryColor;
+    font-weight: 300;
+}

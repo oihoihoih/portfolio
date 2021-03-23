@@ -1,0 +1,26 @@
+<section class="section mx-auto">
+    <div class="section-title">
+        <h2 class="heading-secondary text-end">Work</h2>
+    </div>
+
+    <div class="section-content">
+        <ul class="portfolio">
+            <li *ngFor="let work of works" class="portfolio__item">
+                <div class="row portfolio__type">
+                    <div class="portfolio__type--year text-start col-6">{{ work.year }}</div>
+                    <div class="portfolio__type--type text-end col-6">{{ work.type }}</div>
+
+                </div>
+
+                <div class="portfolio__item--title">
+                    <a href="" class="portfolio__link">
+                        {{ work.listName }}
+                        <img class="portfolio__image" [src]="work.mainImg" [alt]="work.name" />
+
+                    </a>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+</section>

@@ -1,0 +1,29 @@
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+html {
+    //this defines what 1rem is
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #eeede9;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+// Sections
+.section-title {
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid $primaryColor;
+}
