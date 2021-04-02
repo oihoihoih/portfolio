@@ -9,9 +9,32 @@
         padding-right: 5rem;
         font-size: 3.5rem;
         font-weight: 400;
+        margin-bottom: 8rem;
         &-indent {
             text-indent: 5rem;
         }
+    }
+    &__competencias {
+        font-size: 1.8rem;
+        font-weight: 400;
+        &--text {
+            list-style: none;
+            font-size: 3rem;
+            font-weight: 400;
+            padding-left: 0;
+        }
+    }
+}
+
+.animation-container {
+    width: 100%;
+    padding: 2rem;
+    &__img {
+        max-width: 60%;
+        animation-name: animRotate;
+        animation-duration: 8s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
     }
 }
 
