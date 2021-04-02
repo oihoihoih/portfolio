@@ -1,33 +1,51 @@
-*,
-:before,
-:after {
-    box-sizing: border-box;
-}
-
-html {
-    //this defines what 1rem is
-    font-size: 62.5%;
-}
-
-body {
-    background-color: #eeede9;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-li {
-    list-style: none;
-}
-
-// Sections
-.section-title {
-    width: 100%;
-    padding: 2rem 0;
-    border-bottom: 1px solid $primaryColor;
-}
+    *,
+     :before,
+     :after {
+        box-sizing: border-box;
+    }
+    
+    html {
+        //this defines what 1rem is
+        font-size: 62.5%;
+    }
+    
+    body {
+        background-color: #eeede9;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    // Sections
+    .section-title {
+        width: 100%;
+        padding: 2rem 0;
+        border-bottom: 1px solid $primaryColor;
+    }
+    
+    .about,
+    .contact {
+        width: 100vw;
+        padding: 0 2vw;
+        &__heading {
+            margin-top: 8vh;
+        }
+        &__text {
+            margin-top: 5rem;
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 8rem;
+            &-indent {
+                text-indent: 5rem;
+            }
+        }
+    }
