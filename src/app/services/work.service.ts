@@ -38,12 +38,20 @@ export class WorkService {
     }
 ]; 
 
+
+
   constructor() { }
 
   getWorks() {
     return this.works;
 }
+
+  getSingleWork (listName: string ): any {
+    return this.works.find( obj => obj.listName === listName )
+  }
+
 }
+
 
 
 
