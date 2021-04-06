@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Works } from 'src/app/interfaces/works.interface';
+import { WorkService } from 'src/app/services/work.service';
+
 
 @Component({
   selector: 'app-work-single',
@@ -7,9 +11,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkSingleComponent implements OnInit {
 
-  constructor() { }
+  listName: string = '';
+
+  singleWork!: Works;
+
+  constructor( private activatedRoute: ActivatedRoute,
+               private workService: WorkService ) { }
 
   ngOnInit(): void {
-  }
+    this.activatedRoute.params
+      .subscribe( ({ listName }) => this.listName = listName );
+    
+    this.singleWork = this.workService.getSingleWork( this.listName );  
+   }
 
 }
