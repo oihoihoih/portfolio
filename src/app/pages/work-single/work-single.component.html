@@ -1,4 +1,31 @@
-<h1> {{ singleWork.name }} </h1>
-<p> {{ singleWork.type }} </p>
-<p> {{ singleWork.year }} </p>
-<p> {{ singleWork.mainImg }} </p>
+<section class="single-container">
+    <div class="single__header row">
+        <h1 class="single__header--heading col-6"> {{ singleWork.name }} </h1>
+        <p class="single__header--text col-5 offset-1"> {{ singleWork.text }} </p>
+    </div>
+
+    <div class="single__body">
+        <div class="single__body--schema row">
+            <div class="col-3">
+                <span class="little">Tipo de proyecto:</span>
+                <p> {{ singleWork.type }} </p>
+            </div>
+
+            <div class="col-3">
+                <span class="little">Año:</span>
+                <p> {{ singleWork.year }} </p>
+            </div>
+            <div class="col-3">
+                <span class="little">Cliente:</span>
+                <p> {{ singleWork.client }} </p>
+            </div>
+            <div class="col-3" *ngIf="singleWork.link">
+                <a routerLink="{{ singleWork.link }}" class="col-4"> Ver web </a>
+            </div>
+
+        </div>
+        <div>
+            <img class="single__body--image" [src]="singleWork.mainImg" alt="Espais d'il·luminació web">
+        </div>
+    </div>
+</section>
