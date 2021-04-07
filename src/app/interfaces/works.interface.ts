@@ -4,4 +4,7 @@ export interface Works {
   year: string;
   type: string;
   mainImg: string;
+  link?: string;
+  text: string;
+  client: string;
 }
