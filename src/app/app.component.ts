@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -9,6 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'oihPortfolio';
+export class AppComponent implements OnInit{
+
+  ngOnInit() {
+  }
+
+  onClick(element: HTMLElement) {
+    element.scrollIntoView({ behavior: 'smooth'});
+}
 }
