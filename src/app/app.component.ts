@@ -18,3 +18,6 @@ export class AppComponent implements OnInit{
     element.scrollIntoView({ behavior: 'smooth'});
 }
 }
+
+// ScrollTrigger:
+// https://www.youtube.com/watch?v=BU8ddY7c6xw
