@@ -12,8 +12,15 @@
         }
     }
     &__image {
-        display: none;
+        max-width: 60vw;
+        max-height: 80vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         opacity: 0;
+        transition: opacity .8s;
+        pointer-events: none;
     }
     &__link {
         font-size: 12rem;
@@ -24,13 +31,6 @@
             color: $secondaryColor;
         }
         &:hover .portfolio__image {
-            max-width: 60vw;
-            max-height: 80vh;
-            display: block;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             opacity: 1;
         }
     }
