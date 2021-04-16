@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.changeText = Math.random() < 0.5;
-    console.log(this.changeText);
+    console.log('changeText',this.changeText);
   }
 
   ngOnInit(): void {
@@ -34,16 +34,16 @@ export class HomeComponent implements OnInit {
     });
 
     var material = new Blotter.ChannelSplitMaterial();
-    material.uniforms.uOffset.value = 0.05;
-    material.uniforms.uRotation.value = 50;
-    material.uniforms.uApplyBlur.value = 1;
-    material.uniforms.uAnimateNoise.value = 0.3;
+      material.uniforms.uOffset.value = 0.05;
+      material.uniforms.uRotation.value = 50;
+      material.uniforms.uApplyBlur.value = 1;
+      material.uniforms.uAnimateNoise.value = 0.3;
 
     var blotter = new Blotter(material, { texts: text });
 
     var scope = blotter.forText(text);
 
-    console.log('scope:', scope);
+    console.log('scope1:', scope);
 
     scope.appendTo(graphic);
 
@@ -71,9 +71,9 @@ export class HomeComponent implements OnInit {
     });
 
     var materialFront = new Blotter.LiquidDistortMaterial();
-    materialFront.uniforms.uSpeed.value = 0.2;
-    materialFront.uniforms.uVolatility.value = 0.09;
-    materialFront.uniforms.uSeed.value = 1;
+      materialFront.uniforms.uSpeed.value = 0.2;
+      materialFront.uniforms.uVolatility.value = 0.09;
+      materialFront.uniforms.uSeed.value = 1;
 
     var blotter = new Blotter(materialFront, { texts: textFront });
 

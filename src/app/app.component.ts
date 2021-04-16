@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -11,12 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class AppComponent implements OnInit{
 
+  
   ngOnInit() {
+
   }
 
-  onClick(element: HTMLElement) {
-    element.scrollIntoView({ behavior: 'smooth'});
-}
 }
 
 // ScrollTrigger:

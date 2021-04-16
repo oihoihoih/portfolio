@@ -14,13 +14,13 @@
             <!-- TODO: Poner la lista en display none en pequeño -->
             <ul class="navigation__list js-clone-nav">
                 <li class="navigation__item">
-                    <a class="navigation__link" (click)="onClick(work)">Work</a>
+                    <a class="navigation__link">Work</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" (click)="onClick(about)">About</a>
+                    <a class="navigation__link">About</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" (click)="onClick(contact)">Contact</a>
+                    <a class="navigation__link">Contact</a>
                 </li>
             </ul>
 
@@ -33,7 +33,11 @@
     </nav>
 </div>
 
-<app-home class="section"></app-home>
+
+<section #home>
+    <app-home class="section"></app-home>
+</section>
+
 <section #work>
     <div class="space-20"></div>
     <app-work></app-work>
@@ -46,7 +50,7 @@
     <div class="space-20"></div>
     <app-contact></app-contact>
     <div class="space-20"></div>
-
 </section>
+
 <!-- <router-outlet></router-outlet> -->
 <!-- <app-footer></app-footer> -->
