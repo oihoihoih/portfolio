@@ -11,13 +11,13 @@
             <!-- TODO: Poner la lista en display none en pequeño -->
             <ul class="navigation__list js-clone-nav">
                 <li class="navigation__item">
-                    <a routerLink="work" class="navigation__link">Work</a>
+                    <a (click)="toWork()" class="navigation__link">Work</a>
                 </li>
                 <li class="navigation__item">
-                    <a routerLink="about" class="navigation__link">About</a>
+                    <a (click)="toAbout()" #about class="navigation__link">About</a>
                 </li>
                 <li class="navigation__item">
-                    <a routerLink="contact" class="navigation__link">Contact</a>
+                    <a (click)="toContact()" class="navigation__link">Contact</a>
                 </li>
             </ul>
 

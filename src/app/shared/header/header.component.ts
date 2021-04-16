@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  constructor( ) { }
 
   ngOnInit(): void {
   }
+  
+  toWork() {
+    document.getElementById("work")?.scrollIntoView({behavior: 'smooth'});
+  }
 
+  toAbout() {
+    document.getElementById("about")?.scrollIntoView({behavior: 'smooth'});
+
+  }
+
+  toContact() {
+    document.getElementById("contact")?.scrollIntoView({behavior: 'smooth'});
+
+  }
+ 
 }

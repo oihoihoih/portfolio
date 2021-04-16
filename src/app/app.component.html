@@ -1,56 +1,7 @@
-<!-- <app-header></app-header> -->
+<app-header></app-header>
 
-<!-- Header -->
-<div class="header">
-    <!-- Header/navegación -->
-    <nav class="header__nav">
-        <!-- Logo -->
-        <div class="header__logo-box">
-            <a routerLink="home" class="header__logo">Oih</a>
-        </div>
-
-        <!-- Navigation -->
-        <div class="navigation">
-            <!-- TODO: Poner la lista en display none en pequeño -->
-            <ul class="navigation__list js-clone-nav">
-                <li class="navigation__item">
-                    <a class="navigation__link">Work</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link">About</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link">Contact</a>
-                </li>
-            </ul>
-
-            <!-- TODO: Reescribir estilos para pantallas pequeñas -->
-            <!-- Para pantallas pequeñas: -->
-            <!-- <ul class="site-nav-ul-none-onepage text-right d-inline-block d-lg-none">
-                <li><a href="#" class="js-menu-toggle">Menu</a></li>
-            </ul> -->
-        </div>
-    </nav>
+<div>
+    <router-outlet #outlet="outlet"></router-outlet>
 </div>
 
-
-<section #home>
-    <app-home class="section"></app-home>
-</section>
-
-<section #work>
-    <div class="space-20"></div>
-    <app-work></app-work>
-</section>
-<section #about>
-    <div class="space-20"></div>
-    <app-about></app-about>
-</section>
-<section #contact>
-    <div class="space-20"></div>
-    <app-contact></app-contact>
-    <div class="space-20"></div>
-</section>
-
-<!-- <router-outlet></router-outlet> -->
 <!-- <app-footer></app-footer> -->

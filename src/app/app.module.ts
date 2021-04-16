@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { WorkSingleComponent } from './pages/work-single/work-single.component';
+import { IntroComponent } from './pages/intro/intro.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WorkSingleComponent } from './pages/work-single/work-single.component';
     ContactComponent,
     FooterComponent,
     HomeComponent,
-    WorkSingleComponent
+    WorkSingleComponent,
+    IntroComponent
   ],
   imports: [
     BrowserAnimationsModule,
