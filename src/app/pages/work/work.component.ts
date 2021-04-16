@@ -1,4 +1,4 @@
-import { Component, OnInit, HostBinding } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WorkService } from 'src/app/services/work.service';
 import { Works } from '../../interfaces/works.interface';
 
@@ -8,8 +8,9 @@ import { Works } from '../../interfaces/works.interface';
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })
-export class WorkComponent implements OnInit {
 
+
+export class WorkComponent implements OnInit {
 
   works: Works[] = [];
 
@@ -18,7 +19,6 @@ export class WorkComponent implements OnInit {
   ngOnInit(): void {
     this.works = this.workService.getWorks(); 
   }
-
 
 
 }
