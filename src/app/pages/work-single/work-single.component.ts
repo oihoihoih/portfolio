@@ -27,7 +27,7 @@ export class WorkSingleComponent implements OnInit {
    }
 
    volver() {
-    this.router.navigate(['/work']);
+    this.router.navigate(['']);
    }
 
 }
