@@ -23,8 +23,8 @@
                 <a routerLink="{{ singleWork.link }}" class="col-4"> Ver web </a>
             </div>
         </div>
-        <div class="images">
-            <div *ngFor="let image of singleWork.images" class="images__single">
+        <div>
+            <div *ngFor="let image of singleWork.images">
 
                 <img class="single__body--image" [src]="image" alt="singleWork.name">
             </div>
