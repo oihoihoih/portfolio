@@ -28,9 +28,15 @@
             border-bottom: 1px solid $darkColor;
         }
         &--image {
-            margin-top: 4rem;
+            margin-top: 1rem;
             max-width: 100%;
             height: auto;
         }
+    }
+}
+
+.images {
+    &__single {
+        margin: 0;
     }
 }
