@@ -7,4 +7,5 @@ export interface Works {
   link?: string;
   text: string;
   client: string;
+  images: string[];
 }

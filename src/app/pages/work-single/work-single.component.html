@@ -22,10 +22,12 @@
             <div class="col-3" *ngIf="singleWork.link">
                 <a routerLink="{{ singleWork.link }}" class="col-4"> Ver web </a>
             </div>
-
         </div>
-        <div>
-            <img class="single__body--image" [src]="singleWork.mainImg" alt="Espais d'il·luminació web">
+        <div class="images">
+            <div *ngFor="let image of singleWork.images">
+
+                <img class="single__body--image" [src]="image" alt="imagen i">
+            </div>
         </div>
     </div>
 
