@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Works } from 'src/app/interfaces/works.interface';
 import { WorkService } from 'src/app/services/work.service';
@@ -17,7 +18,8 @@ export class WorkSingleComponent implements OnInit {
 
   constructor( private activatedRoute: ActivatedRoute,
                private workService: WorkService,
-               private router: Router ) { }
+               private router: Router, 
+               private loc: Location ) { }
 
   ngOnInit(): void {
     this.activatedRoute.params
@@ -27,7 +29,8 @@ export class WorkSingleComponent implements OnInit {
    }
 
    volver() {
-    this.router.navigate(['/work']);
+    this.loc.back();
+    // this.router.navigate(['']);
    }
 
 }

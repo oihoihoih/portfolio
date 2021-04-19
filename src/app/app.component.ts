@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent implements OnInit{
 
-  
-  ngOnInit() {
-  }
 
-  prepareRoute( outlet: RouterOutlet ) {
-    console.log('outlet', outlet);
-    return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
-  }
+  constructor( ) { }
+  
+
+  ngOnInit(){ }
+
+  // prepareRoute( outlet: RouterOutlet ) {
+  //   console.log('outlet', outlet);
+  //   return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
+  // }
 
 }
 
